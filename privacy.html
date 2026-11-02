@@ -22,7 +22,7 @@
   <h2>What SOUP connects to</h2>
   <ul>
     <li><strong>Riot's client and services</strong>, to read your own match history and replays. Read-only, your own account.</li>
-    <li><strong>GitHub</strong>, to check for SOUP updates and to download extensions you choose to install.</li>
+    <li><strong>GitHub</strong>, to check for SOUP updates and to download extensions you choose to install, and to read the community list of extensions (Settings &gt; Extensions &gt; Browse).</li>
     <li><strong>valorant-api.com</strong>, for public game data such as agent and map names.</li>
     <li><strong>Google</strong>, only when you use the Drive Sync extension (below).</li>
   </ul>
@@ -31,18 +31,16 @@
   <p>When you sign in with Google in the Drive Sync extension, SOUP asks for:</p>
   <ul>
     <li><strong>Your email address</strong> (<code>email</code>, <code>openid</code>), to show which Google account is signed in.</li>
-    <li><strong>Access to files SOUP creates or that you open with it</strong> (<code>drive.file</code>). SOUP cannot see any other
+    <li><strong>Access to the files Drive Sync creates</strong> (<code>drive.file</code>). SOUP cannot see any other
       file in your Google Drive.</li>
   </ul>
   <p><strong>How it is used:</strong> to upload your SOUP backups (replay library, match files and SOUP settings) to a
-    "SOUP Sync" folder in your Drive, to download them again when you restore, and to keep a team folder you share in sync.
-    Nothing else.</p>
+    "SOUP Sync" folder in your Drive and to download them again when you restore. Nothing else.</p>
   <p><strong>Where it goes:</strong> directly between your PC and Google. The developer of SOUP never receives your Google data,
     your files or your sign-in tokens. They are not sold, not shared with anyone, not used for advertising and not used to train
     AI models.</p>
   <p><strong>Storage:</strong> the sign-in token is kept in Windows Credential Manager on your PC. Your files are stored in your
     own Google Drive, under your Google account's terms.</p>
-  <p><strong>Sharing:</strong> a team folder is shared only with the people you invite, using Google Drive's own sharing.</p>
   <p><strong>Deleting:</strong> Sign out in Drive Sync's settings, or remove access at
     <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Uninstalling the extension deletes
     the token from your PC. The "SOUP Sync" folder stays in your Drive until you delete it there.</p>
